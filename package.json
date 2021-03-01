@@ -1,0 +1,14 @@
+{
+  "name": "flowers.org",
+  "version": "1.0.0",
+  "description": "flowers is an art",
+  "main": "app.js",
+  "scripts": {
+    "test": "testing123"
+  },
+  "keywords": [
+    "flowers"
+  ],
+  "author": "Doaa Falioun",
+  "license": "ISC"
+}
