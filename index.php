@@ -1,3 +1,6 @@
+<?php session_start(); session_gc();
+$active = (isset($_GET["content"])) ? $_GET["content"] : "";
+?> 
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,23 +18,20 @@
   <main>
     <section class="container-fluid px-0">
         <div class="row">
+            <div class="col-12"><?php include("./banner.php"); ?></div>
+        </div>
+    </section>
+    <section class="container-fluid fixed-top px-0">
+       <div class="row">
             <div class="col-12"><?php include("./navbar.php"); ?></div>
         </div>
     </section>
     <section class="container-fluid px-0">
         <div class="row">
-            <div class="col-12"><?php include("./banner.php"); ?></div>
-        </div>
-    </section>
-    <section class="container-fluid">
-        <div class="row">
             <div class="col-12"><?php
-                                  include("./content.php");
-                                ?>
-          </div>
-        </div>
-    </section>
-    <section class="container-fluid px-0 fixed-bottom">
+                                  include("./content.php"); ?></div>
+       </div>
+    <section class="container-fluid fixed-bottom px-0">
         <div class="row">
             <div class="col-12"><?php include("./footer.php"); ?></div>
         </div>
